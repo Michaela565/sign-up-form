@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="png/get-a-waifu-website-favicon-color.png">
+    <link rel="stylesheet" href="css/style.css">
     <title>Sign up now!</title>
 </head>
 <body>
     <div class="picture">
-        <div class="logo"></div>
+        <img src="png/logo-no-background.png" class="logo">
     </div>
     <div class="main">
-        
+        <div class="upper-text">
+            <div>This is not a real online service! You know you need <em>her</em>, you need
+            <b><em>them</em></b>, all of them in your life. So come get them today at
+            <a href="#">www.getawaifu.com</a>!</div>
+            <div>We <em>know</em> you want her.</div>
+        </div>
+        <div class="form-holder">
+            <div class="form-header">Get a waifu!</div>
+            <form action="#" method="get">
+                <fieldset>
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name"  id="first-name">
+                    
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone-number">Phone number</label>
+                    <input type="tel" name="phone-number" id="phone-number">
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" minlength="8">
+
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" minlength="8">
+                </fieldset>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+        <div class="log-in-text">Already have an account? <a href="#">Log in</a></div>
     </div>
 </body>
 </html>
