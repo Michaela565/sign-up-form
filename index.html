@@ -13,40 +13,53 @@
         <img src="png/logo-no-background.png" class="logo">
     </div>
     <div class="main">
-        <div class="upper-text">
+        <div class="upper-text holder">
             <div>This is not a real online service! You know you need <em>her</em>, you need
             <b><em>them</em></b>, all of them in your life. So come get them today at
             <a href="#">www.getawaifu.com</a>!</div>
             <div>We <em>know</em> you want her.</div>
         </div>
-        <div class="form-holder">
+        <div class="form-holder holder">
             <div class="form-header">Get a waifu!</div>
             <form action="#" method="get">
                 <fieldset>
-                    <label for="first-name">First name</label>
-                    <input type="text" name="first-name"  id="first-name">
+                    <div class="input-holder">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name"  id="first-name">
+                    </div>
                     
-                    <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <div class="input-holder">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="phone-number">Phone number</label>
-                    <input type="tel" name="phone-number" id="phone-number">
+                    <div class="input-holder">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    
+                    <div class="input-holder">
+                        <label for="phone-number">Phone number</label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" minlength="8">
-
-                    <label for="confirm-password">Confirm password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" minlength="8">
+                    <div class="input-holder">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" minlength="8">
+                    </div>
+                    
+                    <div class="input-holder">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8">
+                    </div>
+                    
                 </fieldset>
-                <button type="submit">Create Account</button>
+                <button type="submit" class="submit-button">Create Account</button>
             </form>
         </div>
-        <div class="log-in-text">Already have an account? <a href="#">Log in</a></div>
+        <div class="log-in-text holder">Already have an account? <a href="#"><b>Log in</b></a></div>
     </div>
 </body>
 </html>
