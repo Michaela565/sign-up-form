@@ -38,7 +38,7 @@ body{
 
 .upper-text > div{
     font-weight: 600;
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
 fieldset{
@@ -94,3 +94,8 @@ input{
 a:any-link{
     color: #661841;
 }
+
+.bigger{
+    font-size: 1.4em;
+}
+
