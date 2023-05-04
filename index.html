@@ -26,34 +26,34 @@
                 <fieldset>
                     <div class="input-holder">
                         <label for="first-name">First name</label>
-                        <input type="text" name="first-name"  id="first-name">
+                        <input type="text" name="first-name"  id="first-name" required>
                     </div>
                     
                     <div class="input-holder">
                         <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="input-holder">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     
                     <div class="input-holder">
                         <label for="phone-number">Phone number</label>
-                        <input type="tel" name="phone-number" id="phone-number">
+                        <input type="tel" name="phone-number" id="phone-number" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="input-holder">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" minlength="8">
+                        <input type="password" name="password" id="password" minlength="8" required>
                     </div>
                     
                     <div class="input-holder">
                         <label for="confirm-password">Confirm password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" onkeyup='passCheck()'>
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" onkeyup='passCheck()' required>
                         <div class="error invisible">Passwords do not match!</div>
                     </div>
                     
