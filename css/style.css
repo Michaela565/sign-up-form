@@ -141,4 +141,7 @@ a:any-link{
     input{
         width: 30vw;
     }
+    .holder{
+        margin: 0 1em;
+    }
 }
