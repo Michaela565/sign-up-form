@@ -3,12 +3,15 @@
 body{
     font-family:'Libre Franklin', Courier, monospace;
     display: flex;
+    flex-direction: row;
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #E83D95;
     color: #FFFFFF;
 }
+
+
 
 .picture{
     background-image: url("../bg.png");
@@ -113,3 +116,29 @@ a:any-link{
     visibility: visible;
 }
 
+.log-in-text{
+    margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 1020px) and (min-width:600px){
+    body{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 0 30vw;
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 0 20vw;
+        width: 60vw;
+    }
+    input{
+        width: 30vw;
+    }
+}
