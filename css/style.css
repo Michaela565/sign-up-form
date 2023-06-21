@@ -7,8 +7,8 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #d64f95;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #661841;
 }
 
 .picture{
@@ -21,7 +21,7 @@ body{
     max-width: 350px;
     height: auto;
     margin-top: 10em;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgb(255, 255, 255);
     padding: 0 5em;
 }
 
@@ -52,10 +52,12 @@ fieldset{
     margin-bottom: 0.8em;
 }
 
+
 label{
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-bottom: 3px;
 }
 
 input{
@@ -63,27 +65,26 @@ input{
     border: none;
     border-color: #661841;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-radius: 5px;
-    box-shadow: 5px 5px 0px #661841;
+    box-shadow: 5px 5px 0px #d64f95;
 }
 
 .input-holder{
     display: flex;
     flex-flow: column wrap;
     width: 40%;
-
+    margin-bottom: 0.5em;
 }
 
 .form-header{
     margin-bottom: 0.7em;
     font-family: 'Modak';
     font-size: 2em;
-    text-shadow: 3px 3px 0px #661841;
+    color: #d64f95;
 }
 
 .submit-button{
-    margin-top: 2em;
     padding: 0.8em 2em;
     font-family: 'Libre Franklin', Courier, monospace;
     font-weight: 600;
@@ -92,9 +93,11 @@ input{
     border: none;
     border-color: #661841;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-radius: 5px;
     transition: all 0.2s;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 0px #d64f95;
 }
 
 .submit-button:hover{
@@ -108,7 +111,7 @@ input{
 }
 
 a:any-link{
-    color: #661841;
+    color: #000000;
 }
 
 .bigger{
