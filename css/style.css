@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    color: #661841;
+    color: #000000;
 }
 
 .picture{
@@ -21,8 +21,8 @@ body{
     max-width: 350px;
     height: auto;
     margin-top: 10em;
-    background-color: rgb(255, 255, 255);
-    padding: 0 5em;
+    background-color: rgb(255, 255, 255, 0);
+    padding: 0 8em;
 }
 
 .main{
@@ -63,11 +63,11 @@ label{
 input{
     height: 2em;
     border: none;
-    border-color: #661841;
+    border-color: #000000;
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
-    box-shadow: 5px 5px 0px #d64f95;
+    box-shadow: 5px 5px 0px #5e1879;
 }
 
 .input-holder{
@@ -79,9 +79,9 @@ input{
 
 .form-header{
     margin-bottom: 0.7em;
-    font-family: 'Modak';
+    font-weight: 900;
     font-size: 2em;
-    color: #d64f95;
+    color: #5e1879;
 }
 
 .submit-button{
@@ -89,15 +89,15 @@ input{
     font-family: 'Libre Franklin', Courier, monospace;
     font-weight: 600;
     font-size: 1em;
-    color: #661841;
+    color: #000000;
     border: none;
-    border-color: #661841;
+    border-color: #000000;
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
     transition: all 0.2s;
     background-color: #FFFFFF;
-    box-shadow: 5px 5px 0px #d64f95;
+    box-shadow: 5px 5px 0px #5e1879;
 }
 
 .submit-button:hover{
