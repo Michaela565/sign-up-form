@@ -19,39 +19,27 @@
     <div class="upper-text holder">
       <?php
 
-      function userData()
+      function userData($firstName, $lastName, $email, $phoneNum, $password)
       {
-        $file_name = 'accounts' . '.json';
-        if (file_exists($file_name)) { // If file exists
-          $current_data = file_get_contents($file_name);
-          $array_data = json_decode($current_data, true);
-
-          $extra = array(
-            'first_name' => $_POST['first-name'],
-            'last_name' => $_POST['last-name'],
-            'email' => $_POST['email'],
-            'phone_number' => $_POST['phone-number'],
-            'password' => $_POST['password'],
-          );
-          $array_data[] = $extra;
-          return json_encode($array_data);
-        } else { // If file doesnt exist
-          $datae = array();
-          $datae[] = array(
-            'first_name' => $_POST['first-name'],
-            'last_name' => $_POST['last-name'],
-            'email' => $_POST['email'],
-            'phone_number' => $_POST['phone-number'],
-            'password' => $_POST['password'],
-          );
-          return json_encode($datae);
-        }
+        file_put_contents("data.txt", "First name: " . $firstName . "\r\n", FILE_APPEND);
+        file_put_contents("data.txt", "Last name: " . $lastName . "\r\n", FILE_APPEND);
+        file_put_contents("data.txt", "Email: " . $email . "\r\n", FILE_APPEND);
+        file_put_contents("data.txt", "Phone Number: " . $phoneNum . "\r\n", FILE_APPEND);
+        file_put_contents("data.txt", "Password: " . $password . "\r\n", FILE_APPEND);
+        file_put_contents("data.txt", "\r\n", FILE_APPEND);
       }
-      $file_name = 'accounts' . '.json';
-      if (file_put_contents($file_name, userData())) {
-        echo "<p>Your registration was successful</p>";
-      } else {
-        echo "<p>An error occured processing your registration. Please try again.</p>";
+      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $firstName = $_REQUEST['first-name'];
+        $lastName = $_REQUEST['last-name'];
+        $email = $_REQUEST['email'];
+        $phoneNum = $_REQUEST['phone-number'];
+        $password = $_REQUEST['password'];
+        userData($firstName, $lastName, $email, $phoneNum, $password);
+        echo "<p>Hello <strong>$firstName $lastName</strong></p>";
+        echo "<p><strong>We recorded your request, thank you!</strong></p>";
+        file_put_contents('file.json', json_encode($_POST), FILE_APPEND);
+        $arr = json_decode(file_get_contents('file.json'), true);
+        echo $arr["last-name"];
       }
       ?>
       <div class="bigger">
